@@ -2,6 +2,6 @@ repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
     hooks:
-    -   id: trailing-whitespace
-    -   id: check-yaml
-    -   id: check-added-large-files
+    -   id: trailing-whitespace         # Removes trailing whitespace
+    -   id: check-yaml                  # Validates YAML syntax
+    -   id: check-added-large-files     # Prevents adding large files
