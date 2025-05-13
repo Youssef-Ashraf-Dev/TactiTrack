@@ -29,25 +29,6 @@ This project demonstrates MLOps best practices from data management to model dep
 - 🔄 Optimized inference pipeline
 - 🖥️ Interactive analytics dashboard
 
-## Project Structure
-tactitrack/
-├── data/ # Data storage (git-ignored, managed by DVC)
-│ ├── raw/ # Original SoccerNet data
-│ └── processed/ # Processed frames and annotations
-├── models/ # Model definitions
-│ ├── detection/ # Player detection models
-│ ├── tracking/ # Tracking implementations
-│ └── analysis/ # Tactical analysis models
-├── pipelines/ # Processing pipelines
-│ ├── data/ # Data processing
-│ ├── training/ # Model training
-│ └── inference/ # Inference pipelines
-├── utils/ # Utility functions
-├── visualization/ # Visualization tools
-├── tests/ # Test suite
-├── notebooks/ # Exploration notebooks
-└── configs/ # Configuration files
-
 ## Getting Started
 
 Instructions for setup and usage are coming soon.
