@@ -1,0 +1,55 @@
+name: tactitrack
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  # Core Python environment
+  - python=3.10
+  - pip=23.0
+  - ipython
+  - jupyter
+  
+  # Development tools
+  - pytest>=7.3.1
+  - black>=23.3.0
+  - flake8>=6.0.0
+  - isort>=5.12.0
+  - pre-commit>=3.3.2
+  - mkdocs>=1.4.3
+  
+  # Data science foundations
+  - numpy>=1.24.0
+  - pandas>=2.0.0
+  - scipy>=1.10.1
+  - scikit-learn>=1.2.2
+  - matplotlib>=3.7.1
+  - seaborn>=0.12.2
+  - plotly>=5.14.1
+  
+  # Computer vision
+  - opencv>=4.7.0
+  - pytorch>=2.0.0
+  - torchvision>=0.15.0
+  - cudatoolkit=11.7  # Match this to your GPU compatibility
+  
+  # MLOps tools
+  - sqlite>=3.41.2
+  - dvc>=2.58.2
+  - mlflow>=2.3.1
+  
+  # Web & API
+  - fastapi>=0.95.1
+  - uvicorn>=0.22.0
+  - streamlit>=1.22.0
+  
+  # Additional dependencies via pip
+  - pip:
+    # Specialized dependencies not in conda
+    - onnx>=1.14.0
+    - onnxruntime-gpu>=1.14.1  # Use onnxruntime if no GPU
+    - optuna>=3.1.1
+    - python-dotenv>=1.0.0
+    - ultralytics>=8.0.0  # For YOLOv8
+    - supervision>=0.6.0  # Helpful CV utils
+    # Add any other pip-only packages here
