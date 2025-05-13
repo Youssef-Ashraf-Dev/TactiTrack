@@ -1,4 +1,11 @@
-# TactiTrack: Soccer Analytics Platform
+# TactiTrack: Soccer Analytics Platform ⚽
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![YOLOv8](https://img.shields.io/badge/YOLOv8-ultralytics-red)
+![OpenCV](https://img.shields.io/badge/OpenCV-4.5%2B-green)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![DVC](https://img.shields.io/badge/DVC-Data%20Version%20Control-purple)
+![PyTorch](https://img.shields.io/badge/PyTorch-1.9%2B-orange)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-teal)
 
 End-to-end computer vision system that extracts tactical insights from soccer match footage.
 
@@ -21,6 +28,25 @@ This project demonstrates MLOps best practices from data management to model dep
 - 📈 Tactical metrics computation
 - 🔄 Optimized inference pipeline
 - 🖥️ Interactive analytics dashboard
+
+## Project Structure
+tactitrack/
+├── data/ # Data storage (git-ignored, managed by DVC)
+│ ├── raw/ # Original SoccerNet data
+│ └── processed/ # Processed frames and annotations
+├── models/ # Model definitions
+│ ├── detection/ # Player detection models
+│ ├── tracking/ # Tracking implementations
+│ └── analysis/ # Tactical analysis models
+├── pipelines/ # Processing pipelines
+│ ├── data/ # Data processing
+│ ├── training/ # Model training
+│ └── inference/ # Inference pipelines
+├── utils/ # Utility functions
+├── visualization/ # Visualization tools
+├── tests/ # Test suite
+├── notebooks/ # Exploration notebooks
+└── configs/ # Configuration files
 
 ## Getting Started
 
